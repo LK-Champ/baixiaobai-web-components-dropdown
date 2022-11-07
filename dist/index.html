@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dropdown with Web Components</title>
+  </head>
+  <body>
+    <web-dropdown
+      label="下拉菜单组件"
+      option="1"
+      options='[
+        { "label": "黄金糕", "value": 1 }, 
+        { "label": "狮子头", "value": 2 }, 
+        { "label": "螺蛳粉", "value": 3 },
+        { "label": "双皮奶", "value": 4 },
+        { "label": "蚵仔煎", "value": 5 }
+      ]'
+    ></web-dropdown>
+
+    <script src="./bundle.js"></script>
+
+    <script>
+      document
+        .querySelector('web-dropdown')
+          .addEventListener('onOptionChange', (event) =>  {
+            console.log(event.detail);
+          });
+    </script>
+  </body>
+</html>
