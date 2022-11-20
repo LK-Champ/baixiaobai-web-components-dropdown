@@ -101,7 +101,7 @@ template.innerHTML = `
   </style>
   <div class="dropdown">
     <span class="label">Label</span>
-    <my-button></my-button>
+    <baixiaobai-web-components-button></baixiaobai-web-components-button>
     <div class="dropdown-list-container">
       <ul class="dropdown-list"></ul>
     </div>
@@ -115,7 +115,7 @@ class Dropdown extends HTMLElement {
     this._ropdownRoot = this.attachShadow({ mode: 'open' });
     this._ropdownRoot.appendChild(template.content.cloneNode(true));
     this.$label = this._ropdownRoot.querySelector('.label');
-    this.$button = this._ropdownRoot.querySelector('my-button');
+    this.$button = this._ropdownRoot.querySelector('baixiaobai-web-components-button');
     this.$dropdown = this._ropdownRoot.querySelector('.dropdown');
     this.$dropdownList = this._ropdownRoot.querySelector('.dropdown-list');
 
@@ -208,4 +208,4 @@ class Dropdown extends HTMLElement {
   }
 }
 
-window.customElements.define('web-dropdown', Dropdown);
+window.customElements.define('baixiaobai-web-components-dropdown', Dropdown);

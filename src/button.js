@@ -1,6 +1,3 @@
-import globalStyle from './global-style.js';
-import basicAtom from './basic-atom.js';
-
 const template = document.createElement('template');
 
 template.innerHTML = `
@@ -80,4 +77,4 @@ class Button extends HTMLElement {
   }
 }
 
-window.customElements.define('my-button', Button);
+window.customElements.define('baixiaobai-web-components-button', Button);
